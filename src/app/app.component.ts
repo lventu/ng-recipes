@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  currentSection = 'REC';
-
-  onSectionChanged(section: string) {
-    console.log(section);
-    this.currentSection = section;
-  }
 }
