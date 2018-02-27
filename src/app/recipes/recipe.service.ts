@@ -24,6 +24,10 @@ export class RecipeService {
     return this.recipes.slice();  // unmodifiable
   }
 
+  getRecipe(idx: number): Recipe {
+    return this.recipes.slice()[idx];  // unmodifiable
+  }
+
   buyIngredient(recipe: Recipe) {
     this.shoppingListService.addIngredients(recipe.ingredients);
   }
